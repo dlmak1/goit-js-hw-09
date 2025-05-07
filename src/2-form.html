@@ -4,25 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 3</title>
+    <title>Form</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-    <load
-      src="./partials/header.html"
-      icon-path="./img/sprite.svg#logo"
-      highlight-curr="active"
-    />
+    <a class="navigation" href="./index.html">Go back</a>
 
     <main>
       <div class="container">
-        <h1 class="main-title">
-          <span class="main-title-gradient">Welcome</span> to page 3
-        </h1>
-        <load src="./partials/back-link.html" />
+        <form class="feedback-form js-form" autocomplete="off">
+          <label class="label-input">
+            Email
+            <div class="input-container">
+              <div class="border-effect"></div>
+              <input class="email-input" type="email" name="email" autofocus />
+            </div>
+          </label>
+          <label class="label-input">
+            Message
+            <div class="input-container">
+              <div class="border-effect"></div>
+              <textarea name="message" rows="8"></textarea>
+            </div>
+          </label>
+
+          <button class="form-button" type="submit">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front">Submit</span>
+          </button>
+        </form>
       </div>
     </main>
 
-    <load src="./partials/footer.html" />
+    <script src="./js/2-form.js" type="module"></script>
   </body>
 </html>
